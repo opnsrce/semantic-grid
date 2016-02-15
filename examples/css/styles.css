@@ -1,0 +1,229 @@
+.page__header:after, .page__site-nav:after, .page__site-nav .nav-items:after, .page__content:after, .page__footer:after, .page__hero-image-container:after, .page__company-slogan:after, .page__cities:after {
+  content: '';
+  display: table;
+  visibility: hidden;
+  clear: both; }
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'BLOKKNeue-Regular';
+  src: url("fonts/blokk-neue-regular/web/BLOKKNeue-Regular.eot");
+  src: url("fonts/blokk-neue-regular/web/BLOKKNeue-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/blokk-neue-regular/web/BLOKKNeue-Regular.woff") format("woff"), url("fonts/blokk-neue-regular/web/BLOKKNeue-Regular.svg#BLOKKNeue-Regular") format("svg"); }
+html {
+  padding: 0;
+  margin: 0;
+  display: block;
+  position: relative;
+  min-height: 100%; }
+
+body {
+  padding: 20px;
+  margin: 0;
+  display: block;
+  position: relative;
+  font-family: 'BLOKKNeue-Regular';
+  font-size: 10px; }
+
+.sample-content {
+  background-color: #999999;
+  display: block;
+  width: 100%;
+  min-height: 1px;
+  height: 100%; }
+
+.page {
+  display: block;
+  min-height: 100%;
+  margin: auto;
+  max-width: 960px;
+  position: relative;
+  box-sizing: border-box;
+  border: solid 1px grey;
+  font-size: 1rem;
+  padding-right: 12px; }
+  .page:before, .page:after {
+    box-sizing: border-box; }
+  .page:after {
+    content: '';
+    display: table;
+    visibility: hidden;
+    clear: both; }
+  .page__header {
+    height: 75px; }
+  .page__logo {
+    float: left;
+    min-height: 1px;
+    position: relative;
+    width: 33.33333%;
+    box-sizing: border-box;
+    padding: 12px 0 12px 12px;
+    height: 100%; }
+    .page__logo:before, .page__logo:after {
+      box-sizing: border-box; }
+  .page__account-actions {
+    float: left;
+    min-height: 1px;
+    position: relative;
+    width: 66.66667%;
+    box-sizing: border-box;
+    padding: 12px 0 12px 12px;
+    height: 100%; }
+    .page__account-actions:before, .page__account-actions:after {
+      box-sizing: border-box; }
+  .page__site-nav {
+    height: 25px; }
+    .page__site-nav .nav-items {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+    .page__site-nav .nav-item {
+      float: left;
+      min-height: 1px;
+      position: relative;
+      width: 25%;
+      box-sizing: border-box;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 12px;
+      height: 100%;
+      list-style-type: none;
+      text-align: center; }
+      .page__site-nav .nav-item:before, .page__site-nav .nav-item:after {
+        box-sizing: border-box; }
+    .page__site-nav .sample-content {
+      height: 25px; }
+  .page__footer {
+    height: 75px;
+    float: left;
+    min-height: 1px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 0;
+    padding-bottom: 12px;
+    padding-left: 12px; }
+    .page__footer:before, .page__footer:after {
+      box-sizing: border-box; }
+    @media (max-width: 645px) {
+      .page__footer {
+        float: left;
+        min-height: 1px;
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 0 12px 12px; }
+        .page__footer:before, .page__footer:after {
+          box-sizing: border-box; } }
+  .page__hero-image-container {
+    float: left;
+    min-height: 1px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 12px;
+    padding-bottom: 0;
+    padding-left: 12px; }
+    .page__hero-image-container:before, .page__hero-image-container:after {
+      box-sizing: border-box; }
+    .page__hero-image-container .hero-image {
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: solid 1px grey;
+      height: 320px; }
+      @media (max-width: 430px) {
+        .page__hero-image-container .hero-image {
+          height: 150px; } }
+      .page__hero-image-container .hero-image--seattle {
+        background-image: url("../img/seattle.svg"); }
+  .page__company-slogan {
+    clear: both;
+    display: block;
+    height: 50px; }
+    .page__company-slogan .slogan {
+      float: left;
+      min-height: 1px;
+      position: relative;
+      width: 16.66667%;
+      box-sizing: border-box;
+      padding: 12px 0 12px 12px;
+      height: 100%; }
+      .page__company-slogan .slogan:before, .page__company-slogan .slogan:after {
+        box-sizing: border-box; }
+      .page__company-slogan .slogan--phrase-2 {
+        float: right;
+        min-height: 1px;
+        position: relative;
+        width: 16.66667%;
+        box-sizing: border-box;
+        padding: 12px 0 12px 12px; }
+        .page__company-slogan .slogan--phrase-2:before, .page__company-slogan .slogan--phrase-2:after {
+          box-sizing: border-box; }
+      .page__company-slogan .slogan--phrase-3 {
+        float: none;
+        margin: 0 auto;
+        min-height: 1px;
+        position: relative;
+        width: 16.66667%;
+        box-sizing: border-box;
+        padding: 12px 0 12px 12px; }
+        .page__company-slogan .slogan--phrase-3:before, .page__company-slogan .slogan--phrase-3:after {
+          box-sizing: border-box; }
+  .page__city {
+    float: left;
+    min-height: 1px;
+    position: relative;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 12px 0 12px 12px;
+    color: grey; }
+    .page__city:before, .page__city:after {
+      box-sizing: border-box; }
+    @media (max-width: 645px) {
+      .page__city {
+        float: left;
+        min-height: 1px;
+        position: relative;
+        width: 50%;
+        box-sizing: border-box;
+        padding-top: 12px;
+        padding-bottom: 0;
+        padding-left: 12px; }
+        .page__city:before, .page__city:after {
+          box-sizing: border-box; } }
+    @media (max-width: 430px) {
+      .page__city {
+        float: left;
+        min-height: 1px;
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 12px;
+        padding-bottom: 0;
+        padding-left: 12px; }
+        .page__city:before, .page__city:after {
+          box-sizing: border-box; } }
+    .page__city .city-info {
+      border: solid 1px gray;
+      padding: 12px; }
+    .page__city .city-image {
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: solid 1px grey;
+      display: block;
+      height: 150px; }
+      .page__city .city-image--beijing {
+        background-image: url("../img/beijing.svg"); }
+      .page__city .city-image--hong-kong {
+        background-image: url("../img/hong-kong.svg"); }
+      .page__city .city-image--kiev {
+        background-image: url("../img/kiev.svg"); }
+      .page__city .city-image--new-york {
+        background-image: url("../img/new-york.svg"); }
+      .page__city .city-image--seattle {
+        background-image: url("../img/seattle.svg"); }
+    .page__city .city-description {
+      padding-top: 12px; }
+
+/*# sourceMappingURL=styles.css.map */
