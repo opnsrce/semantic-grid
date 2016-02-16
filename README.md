@@ -176,7 +176,7 @@ be ignored.
 ### Force Column Position
 
 __config option__: ``force``
-__default_value__: ``none``
+__default value__: ``none``
 
 There are times where a column needs to be rendered in a way it would otherwise
 not given the surrounding markup. For example to force a three-column layout
@@ -309,5 +309,5 @@ class names should be kept to a minimum if not eleminated all together.
 grids causes a lot of extra markup (in the form of wrapper ``<div>``s),
 larger HTML files (due to the length of class names), and larger CSS files
 (due to every grid-related class having to be generated up-front instead of
-as-needed). When this project was convered from a class-based to a mixin-based
+as-needed). When this project was converted from a class-based to a mixin-based
 approach, combined file size was reduced by approximately 3KB.
