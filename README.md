@@ -2,6 +2,14 @@
 
 A semantic CSS grid that uses mixins to apply column-related styles to HTML elements.
 
+#Table of Contents:
+  - [Semantic Grid](#)
+  - [Features](#)
+	  - [Configure the Grid](#)
+	  - [The Configure the Columns](#)
+  - [Frequently-Asked Questions](#)
+	  - [Why Use @mixin Instead of classes like .col-lg-1 and .col-md-2?](#)
+
 # Features
 The Semantic Grid is highly customizable to meet your needs when developing a
 layout for your pages.
