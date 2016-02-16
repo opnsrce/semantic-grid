@@ -3,12 +3,11 @@
 A semantic CSS grid that uses mixins to apply column-related styles to HTML elements.
 
 #Table of Contents:
-  - [Semantic Grid](#)
-  - [Features](#)
-	  - [Configure the Grid](#)
-	  - [The Configure the Columns](#)
-  - [Frequently-Asked Questions](#)
-	  - [Why Use @mixin Instead of classes like .col-lg-1 and .col-md-2?](#)
+  - [Features](#features)
+	  - [Configure the Grid](#configure-the-grid)
+	  - [Configure the Columns](#configure-the-columns)
+  - [Frequently-Asked Questions](#frequently-asked-questions)
+	  - [Why Use Mixins Instead of Classes?](#why-use-mixins-instead-of-classes)
 
 # Features
 The Semantic Grid is highly customizable to meet your needs when developing a
@@ -20,7 +19,7 @@ You can dynamically configure the following aspects of the grid at run-time:
   - Gutter width
   - Grid Width
 
-## The Configure the Columns
+## Configure the Columns
   You can dynamically configure the following aspects of a column _each time you use the mixin_:
   - Width
   - Dynamically alter padding
@@ -28,7 +27,7 @@ You can dynamically configure the following aspects of the grid at run-time:
   - "Push" or "Pull" a column a number of column-widths
 
 # Frequently-Asked Questions
-## Why Use ``@mixin`` Instead of classes like ``.col-lg-1`` and ``.col-md-2``?
+## Why Use Mixins Instead of Classes?
 
 A lot of well-known frameworks (Foundation5 and Bootstrap come to mind) use classes to denote column widths:
 
