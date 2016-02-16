@@ -1,12 +1,12 @@
 @import './_grid';
 
 %clearfix {
-	&:after {
-		content: '';
-		display: table;
-		visibility: hidden;
-		clear: both;
-	}
+    &:after {
+        content: '';
+        display: table;
+        visibility: hidden;
+        clear: both;
+    }
 }
 
 /// FONTS
@@ -15,19 +15,19 @@ $font-base-file-name: 'BLOKKNeue-Regular';
 $font-file-path: 'fonts/blokk-neue-regular/web';
 
 @font-face {
-	font-weight: normal;
-	font-style: normal;
-	font-family: 'BLOKKNeue-Regular';
-		src: url('#{$font-file-path}/#{$font-base-file-name}.eot');
-		src:
-			url('#{$font-file-path}/#{$font-base-file-name}.eot?#iefix')
-			format('embedded-opentype'),
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'BLOKKNeue-Regular';
+        src: url('#{$font-file-path}/#{$font-base-file-name}.eot');
+        src:
+            url('#{$font-file-path}/#{$font-base-file-name}.eot?#iefix')
+            format('embedded-opentype'),
 
-			url('#{$font-file-path}/#{$font-base-file-name}.woff')
-			format('woff'),
+            url('#{$font-file-path}/#{$font-base-file-name}.woff')
+            format('woff'),
 
-			url('#{$font-file-path}/#{$font-base-file-name}.svg##{$font-base-file-name}')
-			format('svg');
+            url('#{$font-file-path}/#{$font-base-file-name}.svg##{$font-base-file-name}')
+            format('svg');
 }
 /////////
 
@@ -37,151 +37,151 @@ $bp-small: 430px;
 
 ///// RESETS
 html {
-	padding: 0;
-	margin: 0;
-	display: block;
-	position: relative;
-	min-height: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-	padding: 20px;
-	margin: 0;
-	display: block;
-	position: relative;
-	font-family: 'BLOKKNeue-Regular';
-	font-size: 10px;
+    padding: 20px;
+    margin: 0;
+    display: block;
+    position: relative;
+    font-family: 'BLOKKNeue-Regular';
+    font-size: 10px;
 }
 ////
 
 
 //// Helper Classes
 .sample-content {
-	background-color: #999999;
-	display: block;
-	width: 100%;
-	min-height: 1px;
-	height: 100%;
+    background-color: #999999;
+    display: block;
+    width: 100%;
+    min-height: 1px;
+    height: 100%;
 }
 ////
 
 .page {
-	@include grid();
-	border: solid 1px grey;
-	font-size: 1rem;
-	padding-right: 12px;
+    @include grid();
+    border: solid 1px grey;
+    font-size: 1rem;
+    padding-right: 12px;
 
-	&__header {
-		@extend %clearfix;
-		height: 75px;
-	}
+    &__header {
+        @extend %clearfix;
+        height: 75px;
+    }
 
-	&__logo {
-		@include column(4);
-		height: 100%;
-	}
+    &__logo {
+        @include column(4);
+        height: 100%;
+    }
 
-	&__account-actions {
-		@include column(8);
-		height: 100%;
-	}
+    &__account-actions {
+        @include column(8);
+        height: 100%;
+    }
 
-	&__site-nav {
-		@extend %clearfix;
-		height: 25px;
-		.nav-items {
-			@extend %clearfix;
-			height: 100%;
-			margin: 0;
-			padding: 0;
-			list-style-type: none;
-		}
-		.nav-item {
-			@include column(3, (collapse: top bottom));
-			height: 100%;
-			list-style-type: none;
-			text-align: center;
-		}
-		.sample-content {
-			height: 25px;
-		}
-	}
-	&__content {
-		@extend %clearfix;
-	}
+    &__site-nav {
+        @extend %clearfix;
+        height: 25px;
+        .nav-items {
+            @extend %clearfix;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .nav-item {
+            @include column(3, (collapse: top bottom));
+            height: 100%;
+            list-style-type: none;
+            text-align: center;
+        }
+        .sample-content {
+            height: 25px;
+        }
+    }
+    &__content {
+        @extend %clearfix;
+    }
 
-	&__footer {
-		@extend %clearfix;
-		height: 75px;
-		@include column(12, (collapse: top));
-		@media(max-width: $bp-medium) {
-			@include column(12, (collapse: none));
-		}
-	}
+    &__footer {
+        @extend %clearfix;
+        height: 75px;
+        @include column(12, (collapse: top));
+        @media(max-width: $bp-medium) {
+            @include column(12, (collapse: none));
+        }
+    }
 
-	&__hero-image-container {
-		@include column(12, (collapse: bottom));
-		@extend %clearfix;
-		.hero-image {
-			background-repeat: no-repeat;
-			background-size: cover;
-			border: solid 1px grey;
-			@media(max-width: $bp-small) {
-				height: 150px
-			}
-			height: 320px;
-			&--seattle { background-image: url('../img/seattle.svg'); }
-		}
-	}
+    &__hero-image-container {
+        @include column(12, (collapse: bottom));
+        @extend %clearfix;
+        .hero-image {
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: solid 1px grey;
+            @media(max-width: $bp-small) {
+                height: 150px
+            }
+            height: 320px;
+            &--seattle { background-image: url('../img/seattle.svg'); }
+        }
+    }
 
-	&__company-slogan {
-		@extend %clearfix;
-		clear: both;
-		display: block;
-		height: 50px;
-		.slogan {
-			@include column(2);
-			height: 100%;
-			&--phrase-2 {
-				@include column(2, (force: 'right'));
-			}
-			&--phrase-3  {
-				@include column(2, (force: 'center'));
-			}
-		}
-	}
+    &__company-slogan {
+        @extend %clearfix;
+        clear: both;
+        display: block;
+        height: 50px;
+        .slogan {
+            @include column(2);
+            height: 100%;
+            &--phrase-2 {
+                @include column(2, (force: 'right'));
+            }
+            &--phrase-3  {
+                @include column(2, (force: 'center'));
+            }
+        }
+    }
 
-	&__cities {
-		@extend %clearfix;
-	}
+    &__cities {
+        @extend %clearfix;
+    }
 
-	&__city {
-		@include column(3);
-		color: grey;
-		@media(max-width: $bp-medium) {
-			@include column(6, (collapse: bottom));
-		}
-		@media(max-width: $bp-small) {
-			@include column(12, (collapse: bottom));
-		}
-		.city-info {
-			border: solid 1px gray;
-			padding: 12px;
-		}
-		.city-image {
-			background-repeat: no-repeat;
-			background-size: cover;
-			border: solid 1px grey;
-			display: block;
-			height: 150px;
-			&--beijing { background-image: url('../img/beijing.svg'); }
-			&--hong-kong { background-image: url('../img/hong-kong.svg'); }
-			&--kiev { background-image: url('../img/kiev.svg'); }
-			&--new-york { background-image: url('../img/new-york.svg'); }
-			&--seattle { background-image: url('../img/seattle.svg'); }
-		}
-		.city-description {
-			padding-top: 12px;
-		}
-	}
+    &__city {
+        @include column(3);
+        color: grey;
+        @media(max-width: $bp-medium) {
+            @include column(6, (collapse: bottom));
+        }
+        @media(max-width: $bp-small) {
+            @include column(12, (collapse: bottom));
+        }
+        .city-info {
+            border: solid 1px gray;
+            padding: 12px;
+        }
+        .city-image {
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: solid 1px grey;
+            display: block;
+            height: 150px;
+            &--beijing { background-image: url('../img/beijing.svg'); }
+            &--hong-kong { background-image: url('../img/hong-kong.svg'); }
+            &--kiev { background-image: url('../img/kiev.svg'); }
+            &--new-york { background-image: url('../img/new-york.svg'); }
+            &--seattle { background-image: url('../img/seattle.svg'); }
+        }
+        .city-description {
+            padding-top: 12px;
+        }
+    }
 }

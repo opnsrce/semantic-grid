@@ -239,7 +239,6 @@ before or after the affected column.
 ...
 ```
 
-
 # Frequently-Asked Questions
 ## Why Use Mixins Instead of Classes?
 
