@@ -4,21 +4,41 @@ A semantic CSS grid that uses mixins to apply column-related styles to HTML
 elements.
 
 #Table of Contents:
+  - [Prerequisites](#prerequisites)
+  - [See it in Action](#see-it-in-action)
   - [Features](#features)
-	- [Configure the Grid](#configure-the-grid)
+  - [Configuring the Grid](#configuring-the-grid)
       - [Max Grid Width](#max-grid-width)
       - [Number of Columns](#number-of-columns)
       - [Gutter Width](#gutter-width)
-	- [Configure the Columns](#configure-the-columns)
+  - [Configuring the Columns](#configuring-the-columns)
+      - [Width](#width)
+      - [Collapse Gutters](#collapse-gutters)
+      - [Force Column Position](#force-column-position)
+      - ["Push" or "Pull" a Column](#push-or-pull-a-column)
   - [Frequently-Asked Questions](#frequently-asked-questions)
-	  - [Why Use Mixins Instead of Classes?](#why-use-mixins-instead-of-classes)
+      - [Why Use Mixins Instead of Classes?](#why-use-mixins-instead-of-classes)
+
+# Prerequisites
+  Semantic Grid was compiled using SASS 3.4.21
+
+# See it in Action
+
+An example page demonstrating _almost_ every feature of the grid can be found
+[here](/semantic-grid/examples/index.html).
 
 # Features
 
 Semantic Grid is easy to use, highly configurable, and doesn't require
-non-semantic CSS classes to use.
+non-semantic CSS classes to use. Highly flexible configuration options control:
 
-## Configure the Grid
+  - Column Position
+  - Column widths
+  - Gutter Width
+  - Max grid width
+  - Number of columns
+
+## Configuring the Grid
 The following aspects of the grid can bedynamically configured at run-time:
 
 ### Max Grid Width
@@ -97,7 +117,7 @@ $grid-config: (
 ...
 ```
 
-## Configure the Columns
+## Configuring the Columns
 
 The following aspects of a column can be configured:
 
@@ -122,7 +142,7 @@ should span. The value can range from 1 to the number specified in
 ...
 ```
 
-### Collapse Gutters on Any or All Sides
+### Collapse Gutters
 
 __config option__: ``collapse``
 __default value__: ``none``
@@ -153,7 +173,7 @@ be ignored.
 ...
 ```
 
-### Force a Column to be Right-aligned or Centered
+### Force Column Position
 
 __config option__: ``force``
 __default_value__: ``none``
@@ -212,7 +232,7 @@ the remaining space between the two floated elements. In order to center a
 column between other non-centered columns, the non-centered columns need to
 appear in the source code before the centered column does.
 
-### "Push" or "Pull" a Column a Number of Column-widths
+### "Push" or "Pull" a Column
 
 __config option__: ``push`` and ``pull``
 __default value__: ``0``
