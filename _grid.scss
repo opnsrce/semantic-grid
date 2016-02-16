@@ -11,6 +11,26 @@ $grid-config: (
 	num-columns: 12
 );
 
+@mixin grid() {
+	$max-grid-width: map-get($grid-config, 'max-grid-width');
+
+	display: block;
+	min-height: 100%;
+	margin: auto;
+	max-width: $max-grid-width;
+	position: relative;
+	box-sizing: border-box;
+	&:before, &:after {
+		box-sizing: border-box;
+	}
+	&:after {
+		content: '';
+		display: table;
+		visibility: hidden;
+		clear: both;
+	}
+}
+
 //
 // @param {integer} $width How wide the column should be
 // @param {map} $options The config options for the column. See $default-options
@@ -102,25 +122,5 @@ $grid-config: (
 
 	@if($pull > 0) {
 		right: ($push / $num-columns) * 100%;
-	}
-}
-
-@mixin grid() {
-	$max-grid-width: map-get($grid-config, 'max-grid-width');
-
-	display: block;
-	min-height: 100%;
-	margin: auto;
-	max-width: $max-grid-width;
-	position: relative;
-	box-sizing: border-box;
-	&:before, &:after {
-		box-sizing: border-box;
-	}
-	&:after {
-		content: '';
-		display: table;
-		visibility: hidden;
-		clear: both;
 	}
 }
