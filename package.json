@@ -1,0 +1,23 @@
+{
+  "name": "semantic-grid",
+  "version": "1.0.1",
+  "description": "A semantic CSS grid that uses mixins to apply column-related styles to HTML elements.",
+  "main": "_grid.scss",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opnsrce/semantic-grid.git"
+  },
+  "keywords": ["sass", "semantic", "grid", "css", "layout"],
+  "author": "Levi Hackwith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opnsrce/semantic-grid/issues"
+  },
+  "homepage": "opnsrce.github.io/semantic-grid"
+}

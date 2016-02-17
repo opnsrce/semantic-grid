@@ -6,7 +6,7 @@ elements.
 #Table of Contents:
   - [Prerequisites](#prerequisites)
   - [See it in Action](#see-it-in-action)
-  - [Features](#features)
+  - [Installation](#installation)
   - [Configuring the Grid](#configuring-the-grid)
       - [Max Grid Width](#max-grid-width)
       - [Number of Columns](#number-of-columns)
@@ -25,21 +25,17 @@ elements.
 # See it in Action
 
 An example page demonstrating _almost_ every feature of the grid can be found
-[here](/semantic-grid/examples/index.html).
+[here](http://opnsrce.github.io/semantic-grid/examples/index.html).
 
-# Features
+# Installation
 
-Semantic Grid is easy to use, highly configurable, and doesn't require
-non-semantic CSS classes to use. Highly flexible configuration options control:
+To install the semantic grid from npm:
 
-  - Column Position
-  - Column widths
-  - Gutter Width
-  - Max grid width
-  - Number of columns
+``npm install semantic-grid``
 
 ## Configuring the Grid
-The following aspects of the grid can bedynamically configured at run-time:
+
+The following aspects of the grid can be dynamically configured at run-time:
 
 ### Max Grid Width
 
