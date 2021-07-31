@@ -1,4 +1,4 @@
-@import './_grid';
+@import '../_grid';
 
 %clearfix {
     &:after {
@@ -32,10 +32,15 @@ $font-file-path: 'fonts/blokk-neue-regular/web';
 /////////
 
 $bp-large: 2000px;
-$bp-medium: 645px;
+$bp-medium: 745px;
 $bp-small: 430px;
 
 ///// RESETS
+
+* {
+    box-sizing: border-box;
+}
+
 html {
     padding: 0;
     margin: 0;
@@ -66,38 +71,41 @@ body {
 ////
 
 .page {
-    @include grid();
-    border: solid 1px grey;
+    min-height: 100%;
+    margin: auto;
+    border: solid 1px grey;         
+    max-width: 960px;
+    min-width: 320px;
     font-size: 1rem;
-    padding-right: 12px;
+    padding: 0 12px 12px 12px;
 
     &__header {
-        @extend %clearfix;
+        @include grid(12);
         height: 75px;
     }
 
     &__logo {
-        @include column(4);
+        @include column(4, 1);
         height: 100%;
+        padding: 12px 0;
     }
 
     &__account-actions {
-        @include column(8);
+        @include column(8, 5);
         height: 100%;
+        padding: 12px 0;
     }
 
     &__site-nav {
-        @extend %clearfix;
-        height: 25px;
         .nav-items {
-            @extend %clearfix;
+            @include grid();
             height: 100%;
-            margin: 0;
+            margin: 0 0 12px 0;
             padding: 0;
             list-style-type: none;
         }
         .nav-item {
-            @include column(3, (collapse: top bottom));
+            @include column(3);
             height: 100%;
             list-style-type: none;
             text-align: center;
@@ -106,22 +114,13 @@ body {
             height: 25px;
         }
     }
-    &__content {
-        @extend %clearfix;
-    }
 
     &__footer {
-        @extend %clearfix;
         height: 75px;
-        @include column(12, (collapse: top));
-        @media(max-width: $bp-medium) {
-            @include column(12, (collapse: none));
-        }
+        @include column(12);
     }
 
     &__hero-image-container {
-        @include column(12, (collapse: bottom));
-        @extend %clearfix;
         .hero-image {
             background-repeat: no-repeat;
             background-size: cover;
@@ -135,34 +134,37 @@ body {
     }
 
     &__company-slogan {
-        @extend %clearfix;
-        clear: both;
-        display: block;
+        @include grid(12);
+        padding: 12px 0 12px 0px;
         height: 50px;
         .slogan {
-            @include column(2);
             height: 100%;
+
+            &--phrase-1 {
+                @include column(2, 1);
+            }          
             &--phrase-2 {
-                @include column(2, (force: 'right'));
+                @include column(2, 6);
             }
             &--phrase-3  {
-                @include column(2, (force: 'center'));
+                @include column(2, 11);
             }
         }
     }
 
     &__cities {
-        @extend %clearfix;
+        @include grid();
+        margin-bottom: 12px;
     }
 
     &__city {
         @include column(3);
         color: grey;
         @media(max-width: $bp-medium) {
-            @include column(6, (collapse: bottom));
+            @include column(6);
         }
         @media(max-width: $bp-small) {
-            @include column(12, (collapse: bottom));
+            @include column(12);
         }
         .city-info {
             border: solid 1px gray;
