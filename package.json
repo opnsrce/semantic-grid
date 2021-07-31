@@ -7,17 +7,26 @@
     "example": "examples"
   },
   "scripts": {
-    "test": ""
+    "build-examples": "sass examples/styles.scss examples/css/styles.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/opnsrce/semantic-grid.git"
   },
-  "keywords": ["sass", "semantic", "grid", "css", "layout"],
+  "keywords": [
+    "sass",
+    "semantic",
+    "grid",
+    "css",
+    "layout"
+  ],
   "author": "Levi Hackwith",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/opnsrce/semantic-grid/issues"
   },
-  "homepage": "opnsrce.github.io/semantic-grid"
+  "homepage": "opnsrce.github.io/semantic-grid",
+  "dependencies": {
+    "sass": "^1.37.0"
+  }
 }
